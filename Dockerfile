@@ -1,6 +1,6 @@
 FROM golang:1.15-alpine AS go
 
-FROM klakegg/hugo:0.76.3-alpine
+FROM klakegg/hugo:0.76.5-alpine
 COPY --from=go /usr/local/go/ /usr/local/go/
 
 RUN apk update && apk upgrade && \
