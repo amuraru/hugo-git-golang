@@ -1,4 +1,4 @@
-FROM golang:1.20-alpine AS go
+FROM golang:1.21-alpine AS go
 
 FROM klakegg/hugo:0.111.3-alpine
 COPY --from=go /usr/local/go/ /usr/local/go/
