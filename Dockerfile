@@ -1,4 +1,4 @@
-FROM golang:1.25-alpine AS go
+FROM golang:1.26-alpine AS go
 
 FROM ghcr.io/gohugoio/hugo:v0.152.2
 
