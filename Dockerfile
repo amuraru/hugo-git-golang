@@ -1,6 +1,6 @@
 FROM golang:1.26-alpine AS go
 
-FROM ghcr.io/gohugoio/hugo:v0.152.2
+FROM ghcr.io/gohugoio/hugo:v0.164.0
 
 USER root
 COPY --from=go /usr/local/go/ /usr/local/go/
